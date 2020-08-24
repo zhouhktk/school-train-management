@@ -1,0 +1,168 @@
+GET http://localhost:8087/app/delete?number=1598062216026100000003
+Accept: application/json
+
+###
+GET http://localhost:8087/app/getinfo?roomNumber=001&staffNumber=100000&page=1&limit=2
+Accept: application/json
+
+###
+GET http://localhost:8087/app/getinfo?roomNumber=001&page=1&limit=2
+Accept: application/json
+
+###
+GET http://localhost:8087/app/getinfo?staffNumber=100000&page=1&limit=2
+Accept: application/json
+
+###
+POST http://localhost:8087/app/updatestatus
+Content-Type: application/json
+
+{
+  "number": "1598002862358100000001",
+  "status": 0
+}
+
+###
+GET http://localhost:8087/app/getfinishlist?page=1&limit=3
+Accept: application/json
+
+###
+GET http://localhost:8087/app/gettodolist?page=1&limit=2
+Accept: application/json
+
+###
+GET http://localhost:8087/room/delete?number=005
+Accept: application/json
+
+###
+POST http://localhost:8087/room/update
+Content-Type: application/json
+
+{
+  "number": "005",
+  "hot": "100",
+  "staffNumber": "400000",
+  "restTimes": 10
+}
+
+###
+GET http://localhost:8087/room/getlist?page=1&limit=3
+Accept: application/json
+
+###
+GET http://localhost:8087/room/getinfo?number=001
+Accept: application/json
+
+###
+GET http://localhost:8087/room/getall
+Accept: application/json
+
+###
+POST http://localhost:8087/room/insert
+Content-Type: application/json
+
+{
+  "number": "005",
+  "staffNumber": "200000",
+  "image": "www.wokao.com"
+}
+
+###
+GET http://localhost:8087/depart/delete?number=122
+Accept: application/json
+
+###
+POST http://localhost:8087/depart/update
+Content-Type: application/json
+
+{
+  "number": 122,
+  "desc": "大爷！来玩啊！",
+  "departName": "玩耍部门"
+}
+
+###
+GET http://localhost:8087/depart/getlist?page=3&limit=3
+Accept: application/json
+
+###
+GET http://localhost:8087/depart/getinfo?number=110
+Accept: application/json
+
+###
+GET http://localhost:8087/depart/getall
+Accept: application/json
+
+###
+POST http://localhost:8087/depart/insert
+Content-Type: application/json
+
+{
+  "number": "122",
+  "departName": "交通事故",
+  "desc": "交通事故交给我！"
+}
+
+
+###
+
+
+
+GET http://localhost:8087/staff/delete?number=600000
+Accept: application/json
+
+###
+POST http://localhost:8087/staff/update
+Content-Type: application/json
+
+{
+  "number": "600000",
+  "password": "123456"
+}
+
+###
+GET http://localhost:8087/staff/getlist?page=1&limit=2
+Accept: application/json
+
+###
+GET http://localhost:8087/staff/getinfo?number=100000
+Accept: application/json
+
+
+###
+GET http://localhost:8087/staff/getall
+Accept: application/json
+
+###
+POST http://localhost:8087/staff/insert
+Content-Type: application/json
+
+{
+  "number": "600000",
+  "password": "123",
+  "username": "zxt",
+  "avatar": "2323232",
+  "status": "0",
+  "gender": "男",
+  "departName": "急救部门",
+  "phone": "1234586778",
+  "email": "2222@qq.com",
+  "desc": "sss"
+}
+
+
+###
+GET http://localhost:8087/admin/logout
+Content-Type: application/json
+
+
+###
+POST http://localhost:8087/admin/login
+Content-Type: application/json
+
+{
+  "number": "123",
+  "password": "123"
+}
+
+###
